@@ -1,8 +1,23 @@
 {
   "name": "typegraphql-example",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/goutam-das/typegraphql-example.git",
   "author": "Goutam Das <goutam@stockedge.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node .\"",
+    "build": "tsc -b",
+    "start": "node ."
+  },
+  "dependencies": {
+    "pg": "^8.6.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.32"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^4.2.4"
+  }
 }
